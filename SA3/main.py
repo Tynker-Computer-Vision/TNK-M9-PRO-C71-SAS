@@ -23,7 +23,6 @@ menuCount = len(menuImages)
 detector = HandDetector(detectionCon=0.8)
 menuChoice = -1
 
-# Flag variable to show if we are dragging an image or mot
 isImageSelected = False
 
 while True:

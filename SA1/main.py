@@ -15,6 +15,10 @@ pathList = os.listdir(path)
 pathList.sort()
 print(type(pathList))
 
+# Print the pathList
+print(pathList)
+
+
 # Load all the images in the list
 for pathImg in pathList:
     img = (cv2.imread(path + "/" + pathImg, cv2.IMREAD_UNCHANGED))
@@ -42,6 +46,7 @@ while True:
     except Exception as e:
         print(e)
 
+   
     # Show the loaded image
     cv2.imshow("Face Filter App", menuImages[2])
     cv2.waitKey(1)
